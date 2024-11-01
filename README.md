@@ -26,9 +26,9 @@ Before you can run or deploy this app, make sure you have the following installe
 
 ## Project Structure
 
-- `student_api.py`: Main Flask application file for handling Student data
+- `app.py`: Main Flask application file for handling Student data
 - `requirements.txt`: List of Python dependencies
-- `student-api.http`: File to test the REST API endpoints using REST Client in Visual Studio Code
+- `test.http`: File to test the REST API endpoints using REST Client in Visual Studio Code
 - `README.md`: Documentation for setup and usage
 
 ## Running Locally
@@ -65,24 +65,12 @@ To run the Flask API on your local machine:
 
 6. **Test the API Endpoints:**
 
-   Use `student-api.http` to test the REST API using the REST Client extension in Visual Studio Code.
+   Use `test.http` to test the REST API using the REST Client extension in Visual Studio Code.
 
 ## Deploying to Azure
 
 
-Key features include:
-- **Automatic Scaling**: Adjust resources based on traffic.
-- **Continuous Integration/Continuous Deployment (CI/CD)**: Integrate with GitHub, Bitbucket, or Azure DevOps for automated deployments.
-- **Custom Domains and SSL**: Secure your apps with custom domains and certificates.
-- **Load Balancing**: Handle high-traffic applications with built-in load balancing.
-- **Monitoring and Diagnostics**: Access logs and real-time monitoring for troubleshooting.
-
-You can learn more about Azure App Service in the [official documentation](https://learn.microsoft.com/en-us/azure/app-service/).
-
-### Deploying the Student API to Azure
-
-For a step-by-step guide to deploying a Flask app to Azure App Service, follow the [Quickstart Guide](https://learn.microsoft.com/en-us/azure/app-service/quickstart-python?tabs=flask%2Cwindows%2Cazure-cli%2Cazure-cli-deploy%2Cdeploy-instructions-azportal%2Cterminal-bash%2Cdeploy-instructions-zip-azcli). This guide will walk you through deploying a Python web app to Azure, allowing your app to run in a scalable Linux environment.
-
---- 
-
-This README provides setup, local execution, and deployment guidance for the Student API project. Let me know if you'd like further details or customization!
+- Within Azure Portal, created Web App resources 
+- Then once service is created, went to Deployment center under Deployment 
+- Then in settings connected selected source as GitHub and then selected the REST-API-Midterm repository, clicked on save to start deploying 
+- Once deployed it will create .github/workflows folder within Github Repository
